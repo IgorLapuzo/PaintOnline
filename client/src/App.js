@@ -1,10 +1,15 @@
 import React from 'react';
+import SettingBar from './components/SettingBar';
+import ToolBar from './components/ToolBar';
+import Canvas from './components/Canvas';
 import './styles/app.scss'
 
 const App = () => {
   return (
-    <div className='App'>
-      
+    <div className='app'>
+      <ToolBar/>
+      <SettingBar/>
+      <Canvas/>
     </div>
   );
 }

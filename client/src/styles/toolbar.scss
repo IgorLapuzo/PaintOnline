@@ -1,1 +1,69 @@
-@import './variables.scss';
+@import './variables';
+
+.toolBar {
+	height: $toolBar-height;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	width: 100%;
+	box-shadow: 0 4px 5px gray;
+	z-index: 9;
+
+	&__btn {
+		height: 32px;
+		width: 32px;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		background-size: cover;
+		margin-left: 10px;
+		border: solid 1px gray;
+		border-radius: 5px;
+	}
+	.brush {
+		background: url('../assets/img/brush.png') no-repeat center center;
+		background-size: 25px;
+	}
+	.eraser {
+		background: url('../assets/img/eraser.png') no-repeat center center;
+		background-size: 25px;
+	}
+	.rect {
+		background: url('../assets/img/rect.png') no-repeat center center;
+		background-size: 25px;
+	}
+	.circle {
+		background: url('../assets/img/circle.png') no-repeat center center;
+		background-size: 25px;
+	}
+	.line {
+		background: url('../assets/img/line.png') no-repeat center center;
+		background-size: 25px;
+	}
+	.undo {
+		margin-left: auto;
+		background: url('../assets/img/undo.png') no-repeat center center;
+		background-size: 25px;
+	}
+	.redo {
+		background: url('../assets/img/redo.png') no-repeat center center;
+		background-size: 25px;
+	}
+	.save {
+		margin-right: 10px;
+		background: url('../assets/img/save.png') no-repeat center center;
+		background-size: 25px;
+	}
+}
+
+.settingBar {
+	height: $toolBar-height;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	width: 100%;
+	box-shadow: 0 4px 5px gray;
+	top: $toolBar-height;
+}
